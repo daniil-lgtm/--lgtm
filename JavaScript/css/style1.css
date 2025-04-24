@@ -1,0 +1,768 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: "Raleway", sans-serif;
+     
+ }
+
+ .body {
+     max-width: 100%;
+     height: 126px;
+     flex-shrink: 0;
+     background: #FCFCFC;
+     font-family: "Raleway", sans-serif;
+     font-optical-sizing: auto;
+    
+ }
+
+ /*header*/
+ .header__container {
+     background: #FCFCFC;
+     width: 100%;
+     flex-shrink: 0;
+     align-items: center;
+     display: flex;
+     justify-content: space-between;
+     font-size: 30px;
+     font-weight: 100;
+     font-family: "Cormorant Unicase", serif;
+     color: #000;
+     
+    
+ }
+
+ .header__logo {
+     padding-left: 80px;
+     width: 150px;
+     
+ }
+
+ .navigation__item {
+     margin-left: 30px;
+     text-decoration: none;
+     color: #000;
+     font-family: "Cormorant Unicase", serif;
+     font-size: 23px;
+     font-weight: 400;
+     letter-spacing: 1.4px;
+     padding-right: 45px;
+ }
+
+ /*Первый блок с картинкой*/
+ .top_container {
+     display: flex;
+     flex-direction: column;
+     padding-top: 70px;
+     background-image: url(../img/image\ 50.png);
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     width: 100%;
+     height: 850px;
+     flex-shrink: 0;
+ }
+
+ .top__side {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 240px;
+ }
+
+ .top__title {
+     /*Преддожение 1, не могу подобрать нужный шрифт. Как в эскизе?*/
+     color: #FFF;
+     text-align: center;
+     font-weight: 500;
+     font-size: 70px;
+     line-height: normal;
+     font-family: "Cormorant Unicase", serif;
+ }
+
+ .top__subtitle {
+     /*Преддожение 2*/
+     color: #FCFCFC;
+     text-align:center;
+    font-family: "Raleway", sans-serif;
+     font-size: 25px;
+     font-weight: 200;
+     line-height: normal;
+     max-width: 633px;
+     height: 150px;
+     margin-top: 90px;
+     box-shadow: #000;
+ }
+
+ .header__button {
+     /*Кнопка Заказать экскурсию*/
+     max-width: 450px;
+     height: 50px;
+     justify-content: center;
+     align-items: center;
+     padding: 13.355px 27.452px;
+     border-radius: 50px;
+     background: #FFF;
+ }
+
+ .excursion {
+     /*Преддожение Заказать экскурсию*/
+     color: #000;
+     text-align: center;
+     font-family: "Cormorant Unicase", serif;
+     font-size: 20.71px;
+     font-weight: 300px;
+     line-height: 14.839px;
+     text-decoration: none;
+ }
+
+ /*О компании*/
+ .textcols {
+     /*Сдесь начинают обяснение как я сделал колонки */
+     display: flex;
+     flex-wrap: wrap;
+     width: 100%;
+     gap: 60px;
+     padding-left: 60px;
+     padding-right: 60px;
+     padding-bottom: 60px;
+ }
+
+ .textcols-item {
+     display: flex;
+     flex-direction: column;
+     flex: 4;
+     height: 48%;
+ }
+
+ .textcols-item_title+.textcols-item_text {
+     text-align: left;
+ }
+
+ .company {
+     /*Преддожение О компании*/
+     color: #000;
+     font-family: "Cormorant Unicase", serif;
+     font-size: 55px;
+     line-height: normal;
+     font-weight: 300;
+     margin: 40px 60px 30px 70px;
+ }
+
+ .textcols-item_text {
+     /* Стили для текста в двух колках*/
+     margin: 20px;
+     width: 100%;
+     /* Изменено на 100% */
+     color: #00061E;
+     font-family: "Cormorant Unicase", serif;
+     font-size: 23px;
+     line-height: 32px;
+ }
+
+ .img {
+     /*Стили для трех картинок*/
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     margin-top: 39px;
+     margin-bottom: 25px;
+ }
+
+ /*Наши эксурсоводы*/
+ .photos {
+     /*Создаю фон*/
+     text-align: center;
+     margin: 0 0 40px 0;
+     overflow: hidden;
+     background:  #00BFFF;
+     padding-bottom: 50px;
+ }
+
+ .photos a {
+     /*Спомощю этого свойстра создаю 3 картники*/
+     width: 33.3%;
+     display: block;
+     float: left;
+     line-height: 0;
+     text-decoration: none;
+ }
+
+ .photos img {
+     /*Свойства для картинок*/
+     height: auto;
+     max-width: 300px;
+     width: 100%;
+     flex-shrink: 0;
+     margin: 20px 0 20px 60px;
+    border-radius: 15px;
+ }
+
+ .photos_guide_title {
+     /*Стили для текста Наши эксурсоводы*/
+     color: #000;
+     text-align: center;
+     font-family: "Cormorant Unicase", serif;
+     font-size: 50px;
+     line-height: normal;
+     padding-top: 20px;
+ }
+
+ .guide_title {
+     /*Стили для текста ФИО эксурсоводов*/
+     color: #FFF;
+     font-family: "Cormorant Unicase", serif;
+     font-size: 25px;
+     line-height: normal;
+     text-align: left;
+     /*Отступ с левого края*/
+     margin: 20px 0 20px 60px;
+ }
+
+ .guide_text {
+     /* Стили для текста эксурсоводов. Но почему то выподаю???*/
+     color: #FFF;
+     font-family: "Cormorant Unicase", serif;
+     font-size: 18px;
+     text-align: left;
+     margin: 20px 0 20px 60px;
+ }
+
+ .page-title {
+     /*Стили для текста. Выбери экскурсию и узнай все тайны Марий Эл*/
+     color: #000;
+     font-family: "Cormorant Unicase", serif;
+     text-align: center;
+     font-size: 55px;
+     font-weight: 300;
+     line-height: normal;
+ }
+
+ .column {
+     display: flex;
+     padding: 30px;
+     flex-direction: column;
+     align-items: flex-start;
+ }
+
+ .column_text {
+     display: flex;
+     margin-left: 30px;
+     margin-top: 110px;
+     flex-direction: column;
+     align-items: flex-start;
+ }
+
+ .row {
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     gap: 60px;
+     padding-left: 60px;
+     padding-right: 60px;
+     padding-bottom: 60px;
+ }
+
+ /* Slideshow container */
+ .slideshow-container {
+     max-width: 1000px;
+     position: relative;
+     margin: auto;
+ }
+
+ /* Next & previous buttons */
+ .prev,
+ .next {
+     cursor: pointer;
+     position: absolute;
+     top: 50%;
+     width: auto;
+     padding: 16px;
+     margin-top: -22px;
+     color: white;
+     font-weight: bold;
+     font-size: 18px;
+     transition: 0.6s ease;
+     border-radius: 0 3px 3px 0;
+ }
+
+ /* Position the "next button" to the right */
+ .next {
+     right: 0;
+     border-radius: 10px 0 0 3px;
+ }
+
+ /* On hover, add a black background color with a little bit see-through */
+ .prev:hover,
+ .next:hover {
+     background-color: rgba(0, 0, 0, 0.8);
+ }
+
+
+ /* The dots/bullets/indicators */
+ .dot {
+     cursor: pointer;
+     height: 15px;
+     width: 15px;
+     margin: 0 2px;
+     background-color: #bbb;
+     border-radius: 50%;
+     display: inline-block;
+     transition: background-color 0.6s ease;
+ }
+
+ .active,
+ .dot:hover {
+     background-color: #717171;
+ }
+
+ /* Fading animation */
+ .fade {
+     -webkit-animation-name: fade;
+     -webkit-animation-duration: 1.5s;
+     animation-name: fade;
+     animation-duration: 1.5s;
+ }
+
+ @-webkit-keyframes fade {
+     from {
+         opacity: .4
+     }
+
+     to {
+         opacity: 1
+     }
+ }
+
+ @keyframes fade {
+     from {
+         opacity: .4
+     }
+
+     to {
+         opacity: 1
+     }
+ }
+
+ /* On smaller screens, decrease text size */
+ @media only screen and (max-width: 300px) {
+
+     .prev,
+     .next,
+     .park__title,
+     .park_name {
+         font-size: 11px
+     }
+ }
+
+ /* Clearfix (clear floats) */
+ .row::after {
+     content: "";
+     clear: both;
+     display: table;
+ }
+
+ .park_name {
+     /*Стили для текста название картинки*/
+     color: #000;
+     font-family: "Cormorant Unicase", serif;
+     font-size: 30px;
+     font-weight: 400;
+     line-height: normal;
+     padding-bottom: 10px;
+ }
+
+ .park__title {
+     /*Стили для текста описание картинки*/
+     color: #00061E;
+     font-family: "Raleway", sans-serif;
+     font-size: 20px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 32px;
+ }
+
+ .slider_button {
+     display: flex;
+     width: 368px;
+     height: 97px;
+     padding: 13px;
+     justify-content: center;
+     align-items: center;
+     gap: 7.419px;
+     flex-shrink: 0;
+
+     border-radius: 60px;
+     background: #00BFFF;
+
+     color: #FFF;
+     text-decoration: none;
+     text-align: center;
+     font-family: "Cormorant Unicase", serif;
+     font-size: 26.71px;
+     font-style: normal;
+     font-weight: 300;
+     line-height: 14.839px;
+     margin-top: 40px;
+ }
+
+ /*Наши отзовы*/
+ .card-title {
+     /*Стили для текста Наши отзовы*/
+     color: #000;
+     font-family: "Cormorant Unicase", serif;
+     font-size: 50px;
+     text-align: center;
+     font-weight: 400;
+     line-height: normal;
+ }
+
+ .card {
+    display: flex;
+    flex-wrap: wrap; /* добавим перенос строк при нехватке места */
+    justify-content: center; /* центрируем карточки */
+    gap: 40px;
+    padding: 60px;
+}
+
+
+.card-body {
+    width: 300px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+    border: 3px solid #000;
+    background-color: white;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+ .slider {
+     display: flex;
+     transition: transform 0.5s ease-in-out;
+ }
+
+ .card-text {
+    color: #000;
+    font-family: "Cormorant Unicase", serif;
+    font-size: 19px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+
+ .slider-container {
+     position: relative;
+     width: 600px;
+     height: 400px;
+     margin: 0 auto;
+     overflow: hidden;
+ }
+
+ .slider {
+     display: flex;
+     transition: transform 0.5s ease-in-out;
+ }
+
+ .prev-button,
+ .next-button {
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     width: 50px;
+     height: 50px;
+     background-color: transparent;
+     border: none;
+     font-size: 24px;
+     color: #000;
+ }
+
+ .prev-button {
+     left: 10px;
+ }
+
+ .next-button {
+     right: 10px;
+ }
+
+ /*form*/
+ .form {
+     align-items: center;
+     display: flex;
+     justify-content: space-between;
+     text-align: center;
+     background: #00BFFF;
+     height: 562px;
+     gap: 40px;
+     padding: 60px;
+ }
+
+ .container {
+     display: flex;
+     flex-direction: column;
+     overflow: hidden;
+     background-color: #00BFFF;
+     width: 100%;
+ }
+
+ .form_container {
+     display: flex;
+     flex-direction: column;
+ }
+
+ input[type=text],
+ input[type=password] {
+     padding: 14px;
+     margin: 5px 0 22px 0;
+     display: inline-block;
+     border: none;
+     flex-shrink: 0;
+     border-radius: 8px;
+     background:#AFEEEE ;
+     font-family: "Cormorant Unicase", serif;
+     font-size: 18px;
+ }
+
+ .registerbtn {
+     display: flex;
+     width: 100%;
+     padding: 18px 37px;
+     justify-content: center;
+     align-items: center;
+     gap: 10px;
+     flex-shrink: 0;
+     border-radius: 15px;
+     background: #00FFFF;
+     font-family: "Cormorant Unicase", serif;
+     font-size: 20px;
+ }
+ @media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+ /*Контакты*/
+ .footer_info {
+     background: #000;
+     display: flex;
+     flex-direction: row;
+ }
+
+ .works {
+     float: left;
+ }
+
+ .content_info {
+     background: #FFF;
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .title-main {
+     /*Стили для текста.Контакты:*/
+     color: #000;
+     font-family: "Cormorant Unicase", serif;
+     font-size: 40px;
+     font-weight: 500;
+     line-height: normal;
+     margin-left: 110px;
+     margin-top: 50px;
+ }
+
+ .first-element_address {
+     /*Стили для текста.г. Йошкар-Ола*/
+     color: #000;
+     font-family: "Cormorant Unicase", serif;
+     font-size: 30px;
+     font-weight: 400;
+     line-height: normal;
+
+     margin-left: 110px;
+     margin-top: 30px;
+ }
+
+ .second-element_address {
+     /*Стили для текста. Бульвар Чавайна 36*/
+     color: #000;
+     font-family: "Cormorant Unicase", serif;
+     font-size: 30px;
+     font-weight: 400;
+     line-height: normal;
+     margin-left: 110px;
+     margin-bottom: 20px;
+ }
+
+ .map {
+     /*Стили для текста.Карта*/
+     color: #000;
+     font-family: "Cormorant Unicase", serif;
+     font-size: 30px;
+     font-weight: 800;
+     line-height: normal;
+     margin-left: 110px;
+     margin-bottom: 20px;
+ }
+
+ .telephone {
+     /*Стили для текста.Телефон:*/
+     color: #000;
+     font-family: "Cormorant Unicase", serif;
+     font-size: 30px;
+     font-weight: 400;
+     line-height: normal;
+     margin-left: 110px;
+     margin-bottom: 10px;
+ }
+
+ .phone {
+     color: #000;
+     font-family: "Raleway", sans-serif;
+     font-size: 30px;
+     font-weight: 400;
+     line-height: normal;
+     margin-left: 110px;
+     margin-bottom: 30px;
+     text-decoration: none;
+ }
+
+ .box_vk {
+     display: inline-flex;
+     margin-left: 110px;
+ }
+
+ .quality_title {
+     width: 550px;
+     text-align: left;
+     margin-left: 40px;
+     margin-top: -190px;
+     color: #FFF;
+     font-family: "Cormorant Unicase", serif;
+     font-size: 30px;
+     line-height: normal;
+ }
+
+ .quality_text {
+     width: 504px;
+     text-align: left;
+     margin-left: 40px;
+     color: #FFF;
+     font-family: "Cormorant Unicase", serif;
+     text-decoration:none;
+     font-size: 26px;
+     font-style: normal;
+     font-weight: 180;
+     line-height: 32px;
+     margin-top: 10px;
+ }
+
+ .font {
+     color: #404040;
+     font-family: "Cormorant Unicase", serif;
+     font-size: 32px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+ }
+
+ /*Footer*/
+ .footer__container {
+     align-items: center;
+     display: flex;
+     justify-content: space-between;
+     text-align: center;
+     margin: 0 0 20px 0;
+     overflow: hidden;
+     background: #00BFFF;
+ }
+
+ .footer__logo {
+     padding-left: 100px;
+     width: 200px;
+ }
+
+ .footer__item {
+     text-decoration: none;
+     color: #000;
+     font-family: "Cormorant Unicase", serif;
+     font-size: 24px;
+     font-weight: 400;
+     letter-spacing: 1.2px;
+     padding-right: 44px;
+ }
+
+ @media (max-width: 830px) {
+     .form {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 100px;
+     }
+
+     .questions {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 100px;
+
+     }
+ }
+
+ @media (max-width: 830px) {
+     .footer {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 100px;
+     }
+ }
+
+ @media (max-width: 440px) {
+     .footer__navigation {
+         display: flex;
+         flex-direction: column;
+     }
+     .cormorant-unicase-light {
+        font-family: "Cormorant Unicase", serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+ }
+ .swiper {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 50px;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .swiper-slide img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  .swiper-slide h3 {
+    margin: 10px 0 5px;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .swiper-slide p {
+    color: #666;
+  }
+  
